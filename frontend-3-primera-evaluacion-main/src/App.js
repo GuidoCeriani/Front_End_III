@@ -48,7 +48,7 @@ render() {
     <div className='layout'>
         <Text text={Data[this.state.story].historia} />
         <ComponentOptions a={Data[this.state.story].opciones.a} b={Data[this.state.story].opciones.b} clickHandler={(click) => this.clickHandler(click)}/>
-        <Selections previous={this.state.previousChoice} selections={this.state.selections.map( (selections, i) => <li key={i}>{selections}</li>)}/>
+        <Selections previous={this.state.previousChoice} selections={this.state.selections.map((selections, i) => <li key={i}>{selections}</li>)}/>
         {this.state.story === 7 || this.state.story === 8 ? 
         <Reset clickHandler={(click) => this.clickHandler(click)}/> : null}
     </div>
